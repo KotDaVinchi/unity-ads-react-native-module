@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "git@github.com:doorxp/unity-ads-react-native-module.git", :tag => "master" }
   s.source_files  = "*.{h,m}"
   s.requires_arc = true
-
-
+  s.vendored_libraries = "Frameworks/UnityAds.framework"
+  s.frameworks = 'UnityAds'
   s.dependency "React"
   #s.dependency "others"
 
