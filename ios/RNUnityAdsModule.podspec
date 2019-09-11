@@ -15,9 +15,7 @@ Pod::Spec.new do |s|
   s.source_files  = "*.{h,m}"
   s.requires_arc = true
   s.vendored_libraries = "Frameworks/UnityAds.framework"
-  s.frameworks = 'UnityAds'
   s.dependency "React"
-  #s.dependency "others"
 
 end
 
