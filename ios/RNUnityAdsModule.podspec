@@ -1,17 +1,17 @@
 
 Pod::Spec.new do |s|
   s.name         = "RNUnityAdsModule"
-  s.version      = "1.0.0"
+  s.version      = "2.0.0"
   s.summary      = "RNUnityAdsModule"
   s.description  = <<-DESC
                   RNUnityAdsModule
                    DESC
-  s.homepage     = ""
+  s.homepage     = "http://doorxp.com"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/author/RNUnityAdsModule.git", :tag => "master" }
+  s.source       = { :git => "git@github.com:doorxp/unity-ads-react-native-module.git", :tag => "master" }
   s.source_files  = "RNUnityAdsModule/**/*.{h,m}"
   s.requires_arc = true
 
