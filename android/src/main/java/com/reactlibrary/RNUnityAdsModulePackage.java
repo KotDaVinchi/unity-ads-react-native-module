@@ -1,5 +1,5 @@
 
-package com.unityads;
+package com.reactlibrary;
 
 import java.util.Arrays;
 import java.util.Collections;
