@@ -51,7 +51,7 @@
   "main": "index.js",
   "name": "react-native-unity-ads-module",
   "peerDependencies": {
-    "react-native": "^0.60.5"
+    "react-native": "^0.61.5"
   },
   "repository": {
     "type": "git",
