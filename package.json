@@ -63,6 +63,6 @@
   "version": "2.0.1",
   "dependencies": {
     "react": "^16.9.0",
-    "react-native": "^0.60.5"
+    "react-native": "^0.61.5"
   }
 }
