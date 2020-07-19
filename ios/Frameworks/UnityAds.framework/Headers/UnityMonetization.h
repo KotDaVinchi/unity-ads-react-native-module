@@ -8,7 +8,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-__attribute__((deprecated("Please use the UnityAds interface")))
 @interface UnityMonetization : NSObject
 +(void)setDelegate:(id <UnityMonetizationDelegate>)delegate;
 +(nullable id <UnityMonetizationDelegate>)getDelegate;
