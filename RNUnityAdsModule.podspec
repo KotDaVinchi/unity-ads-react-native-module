@@ -11,14 +11,13 @@ Pod::Spec.new do |s|
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "doorxp@msn.com" }
   s.platform     = :ios, "9.0"
-  s.source       = { :git => "git@github.com:doorxp/unity-ads-react-native-module.git", :tag => "master" }
+  s.source       = { :git => "git@github.com:kotdavinchi/unity-ads-react-native-module.git", :tag => "master" }
   s.source_files  = "ios/*.{h,m}"
   s.requires_arc = true
   #s.vendored_libraries = "ios/Frameworks/UnityAds.framework"
-  s.vendored_frameworks = "ios/Frameworks/UnityAds.framework"
+#   s.vendored_frameworks = "ios/Frameworks/UnityAds.framework"
   s.dependency "React"
-  s.frameworks = 'UnityAds'
+  s.dependency 'UnityAds'
 
 end
 
-  

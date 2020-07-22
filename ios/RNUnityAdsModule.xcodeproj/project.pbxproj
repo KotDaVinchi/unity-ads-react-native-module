@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1D82150F2328D91A00938248 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8214BB2328D90100938248 /* libReact.a */; };
-		2314FF17201DCC3300B0C57B /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2314FF16201DCC3300B0C57B /* UnityAds.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNUnityAdsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNUnityAdsModule.m */; };
 /* End PBXBuildFile section */
 
@@ -262,7 +261,6 @@
 		134814201AA4EA6300B7C361 /* libRNUnityAdsModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNUnityAdsModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8214A72328D90100938248 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../../react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		1D8214DA2328D90400938248 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../../react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		2314FF16201DCC3300B0C57B /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAds.framework; path = "../node_modules/react-native-unity-ads-module/ios/Frameworks/UnityAds.framework"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNUnityAdsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNUnityAdsModule.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNUnityAdsModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNUnityAdsModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -273,7 +271,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D82150F2328D91A00938248 /* libReact.a in Frameworks */,
-				2314FF17201DCC3300B0C57B /* UnityAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +335,6 @@
 			isa = PBXGroup;
 			children = (
 				1D8214A72328D90100938248 /* React.xcodeproj */,
-				2314FF16201DCC3300B0C57B /* UnityAds.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
