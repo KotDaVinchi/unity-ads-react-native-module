@@ -1,4 +1,4 @@
-import { NativeModules, DeviceEventEmitter, NativeEventEmitter, Platform} from 'react-native';
+import { NativeModules, NativeEventEmitter, Platform} from 'react-native';
 
 const { RNUnityAdsModule } = NativeModules;
 
@@ -16,16 +16,16 @@ const addEventListener = (type, handler) => {
     {
         switch (type) {
             case 'Ready':
-                eventHandlers[type].set(handler, DeviceEventEmitter.addListener(type, event => { handler(event.placementID); }));
+                eventHandlers[type].set(handler, adsManagerEmitter.addListener(type, event => { handler(event.placementID); }));
                 break;
             case 'Start':
-                eventHandlers[type].set(handler, DeviceEventEmitter.addListener(type, event => { handler(event.placementID); }));
+                eventHandlers[type].set(handler, adsManagerEmitter.addListener(type, event => { handler(event.placementID); }));
                 break;
             case 'Finish':
-                eventHandlers[type].set(handler, DeviceEventEmitter.addListener(type, event => { handler(event.placementID, event.result); }));
+                eventHandlers[type].set(handler, adsManagerEmitter.addListener(type, event => { handler(event.placementID, event.result); }));
                 break;
             case 'Error':
-                eventHandlers[type].set(handler, DeviceEventEmitter.addListener(type, event => { handler(event.error, event.message); }));
+                eventHandlers[type].set(handler, adsManagerEmitter.addListener(type, event => { handler(event.error, event.message); }));
                 break;
             default:
                 console.log(`Event with type ${type} does not exist.`);
@@ -53,7 +53,7 @@ const addEventListener = (type, handler) => {
 }
 
 const removeEventListener = (type, handler) => {
-   
+
     if (!eventHandlers[type].has(handler)) {
         return;
     }
@@ -65,10 +65,10 @@ const removeEventListener = (type, handler) => {
 const removeAllListeners = () => {
     if(Platform.OS === 'android')
     {
-        DeviceEventEmitter.removeAllListeners('Ready');
-        DeviceEventEmitter.removeAllListeners('Error');
-        DeviceEventEmitter.removeAllListeners('Start');
-        DeviceEventEmitter.removeAllListeners('Finish');
+        adsManagerEmitter.removeAllListeners('Ready');
+        adsManagerEmitter.removeAllListeners('Error');
+        adsManagerEmitter.removeAllListeners('Start');
+        adsManagerEmitter.removeAllListeners('Finish');
     }
     else if(Platform.OS === 'ios')
     {
