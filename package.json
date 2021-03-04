@@ -51,6 +51,7 @@
   "main": "index.js",
   "name": "react-native-unity-ads-module",
   "peerDependencies": {
+    "react": "^16.9.0",
     "react-native": "^0.61.5"
   },
   "repository": {
@@ -61,8 +62,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "version": "2.0.1",
-  "dependencies": {
-    "react": "^16.9.0",
-    "react-native": "^0.61.5"
-  }
+  "dependencies": {}
 }
